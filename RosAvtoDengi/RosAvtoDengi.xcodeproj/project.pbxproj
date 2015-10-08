@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77EADD011BC6F2F200C0865D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD001BC6F2F200C0865D /* main.m */; };
+		77EADD041BC6F2F200C0865D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD031BC6F2F200C0865D /* AppDelegate.m */; };
+		77EADD071BC6F2F200C0865D /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD061BC6F2F200C0865D /* MainView.m */; };
+		77EADD0A1BC6F2F200C0865D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EADD081BC6F2F200C0865D /* Main.storyboard */; };
+		77EADD0C1BC6F2F200C0865D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EADD0B1BC6F2F200C0865D /* Assets.xcassets */; };
+		77EADD0F1BC6F2F200C0865D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EADD0D1BC6F2F200C0865D /* LaunchScreen.storyboard */; };
+		77EADD1A1BC6F2F200C0865D /* RosAvtoDengiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD191BC6F2F200C0865D /* RosAvtoDengiTests.m */; };
+		77EADD251BC6F2F200C0865D /* RosAvtoDengiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD241BC6F2F200C0865D /* RosAvtoDengiUITests.m */; };
+		77EADD381BC6FCAF00C0865D /* CompanyNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD371BC6FCAF00C0865D /* CompanyNewsView.m */; settings = {ASSET_TAGS = (); }; };
+		77EADD3B1BC6FCCB00C0865D /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD3A1BC6FCCB00C0865D /* LocationView.m */; settings = {ASSET_TAGS = (); }; };
+		77EADD3E1BC6FCDB00C0865D /* CalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD3D1BC6FCDB00C0865D /* CalculatorView.m */; settings = {ASSET_TAGS = (); }; };
+		77EADD411BC6FD0D00C0865D /* ContactsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD401BC6FD0D00C0865D /* ContactsView.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77EADD161BC6F2F200C0865D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77EADCF41BC6F2F100C0865D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77EADCFB1BC6F2F200C0865D;
+			remoteInfo = RosAvtoDengi;
+		};
+		77EADD211BC6F2F200C0865D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77EADCF41BC6F2F100C0865D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77EADCFB1BC6F2F200C0865D;
+			remoteInfo = RosAvtoDengi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77EADCFC1BC6F2F200C0865D /* RosAvtoDengi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosAvtoDengi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77EADD001BC6F2F200C0865D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77EADD021BC6F2F200C0865D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77EADD031BC6F2F200C0865D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77EADD051BC6F2F200C0865D /* MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		77EADD061BC6F2F200C0865D /* MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		77EADD091BC6F2F200C0865D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77EADD0B1BC6F2F200C0865D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77EADD0E1BC6F2F200C0865D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77EADD101BC6F2F200C0865D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77EADD151BC6F2F200C0865D /* RosAvtoDengiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RosAvtoDengiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77EADD191BC6F2F200C0865D /* RosAvtoDengiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosAvtoDengiTests.m; sourceTree = "<group>"; };
+		77EADD1B1BC6F2F200C0865D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77EADD201BC6F2F200C0865D /* RosAvtoDengiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RosAvtoDengiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77EADD241BC6F2F200C0865D /* RosAvtoDengiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosAvtoDengiUITests.m; sourceTree = "<group>"; };
+		77EADD261BC6F2F200C0865D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77EADD361BC6FCAF00C0865D /* CompanyNewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyNewsView.h; sourceTree = "<group>"; };
+		77EADD371BC6FCAF00C0865D /* CompanyNewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyNewsView.m; sourceTree = "<group>"; };
+		77EADD391BC6FCCB00C0865D /* LocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationView.h; sourceTree = "<group>"; };
+		77EADD3A1BC6FCCB00C0865D /* LocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationView.m; sourceTree = "<group>"; };
+		77EADD3C1BC6FCDB00C0865D /* CalculatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorView.h; sourceTree = "<group>"; };
+		77EADD3D1BC6FCDB00C0865D /* CalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorView.m; sourceTree = "<group>"; };
+		77EADD3F1BC6FD0D00C0865D /* ContactsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsView.h; sourceTree = "<group>"; };
+		77EADD401BC6FD0D00C0865D /* ContactsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77EADCF91BC6F2F200C0865D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EADD121BC6F2F200C0865D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EADD1D1BC6F2F200C0865D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77EADCF31BC6F2F100C0865D = {
+			isa = PBXGroup;
+			children = (
+				77EADCFE1BC6F2F200C0865D /* RosAvtoDengi */,
+				77EADD181BC6F2F200C0865D /* RosAvtoDengiTests */,
+				77EADD231BC6F2F200C0865D /* RosAvtoDengiUITests */,
+				77EADCFD1BC6F2F200C0865D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77EADCFD1BC6F2F200C0865D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77EADCFC1BC6F2F200C0865D /* RosAvtoDengi.app */,
+				77EADD151BC6F2F200C0865D /* RosAvtoDengiTests.xctest */,
+				77EADD201BC6F2F200C0865D /* RosAvtoDengiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77EADCFE1BC6F2F200C0865D /* RosAvtoDengi */ = {
+			isa = PBXGroup;
+			children = (
+				77EADD351BC6FC7300C0865D /* Company's news */,
+				77EADD341BC6FC4C00C0865D /* LocationOfBranches */,
+				77EADD331BC6FC1C00C0865D /* Calculator percent */,
+				77EADD321BC6FBD000C0865D /* OurContacts */,
+				77EADD021BC6F2F200C0865D /* AppDelegate.h */,
+				77EADD031BC6F2F200C0865D /* AppDelegate.m */,
+				77EADD051BC6F2F200C0865D /* MainView.h */,
+				77EADD061BC6F2F200C0865D /* MainView.m */,
+				77EADD081BC6F2F200C0865D /* Main.storyboard */,
+				77EADD0B1BC6F2F200C0865D /* Assets.xcassets */,
+				77EADD0D1BC6F2F200C0865D /* LaunchScreen.storyboard */,
+				77EADD101BC6F2F200C0865D /* Info.plist */,
+				77EADCFF1BC6F2F200C0865D /* Supporting Files */,
+			);
+			path = RosAvtoDengi;
+			sourceTree = "<group>";
+		};
+		77EADCFF1BC6F2F200C0865D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77EADD001BC6F2F200C0865D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77EADD181BC6F2F200C0865D /* RosAvtoDengiTests */ = {
+			isa = PBXGroup;
+			children = (
+				77EADD191BC6F2F200C0865D /* RosAvtoDengiTests.m */,
+				77EADD1B1BC6F2F200C0865D /* Info.plist */,
+			);
+			path = RosAvtoDengiTests;
+			sourceTree = "<group>";
+		};
+		77EADD231BC6F2F200C0865D /* RosAvtoDengiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77EADD241BC6F2F200C0865D /* RosAvtoDengiUITests.m */,
+				77EADD261BC6F2F200C0865D /* Info.plist */,
+			);
+			path = RosAvtoDengiUITests;
+			sourceTree = "<group>";
+		};
+		77EADD321BC6FBD000C0865D /* OurContacts */ = {
+			isa = PBXGroup;
+			children = (
+				77EADD3F1BC6FD0D00C0865D /* ContactsView.h */,
+				77EADD401BC6FD0D00C0865D /* ContactsView.m */,
+			);
+			name = OurContacts;
+			sourceTree = "<group>";
+		};
+		77EADD331BC6FC1C00C0865D /* Calculator percent */ = {
+			isa = PBXGroup;
+			children = (
+				77EADD3C1BC6FCDB00C0865D /* CalculatorView.h */,
+				77EADD3D1BC6FCDB00C0865D /* CalculatorView.m */,
+			);
+			name = "Calculator percent";
+			sourceTree = "<group>";
+		};
+		77EADD341BC6FC4C00C0865D /* LocationOfBranches */ = {
+			isa = PBXGroup;
+			children = (
+				77EADD391BC6FCCB00C0865D /* LocationView.h */,
+				77EADD3A1BC6FCCB00C0865D /* LocationView.m */,
+			);
+			name = LocationOfBranches;
+			sourceTree = "<group>";
+		};
+		77EADD351BC6FC7300C0865D /* Company's news */ = {
+			isa = PBXGroup;
+			children = (
+				77EADD361BC6FCAF00C0865D /* CompanyNewsView.h */,
+				77EADD371BC6FCAF00C0865D /* CompanyNewsView.m */,
+			);
+			name = "Company's news";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77EADCFB1BC6F2F200C0865D /* RosAvtoDengi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77EADD291BC6F2F200C0865D /* Build configuration list for PBXNativeTarget "RosAvtoDengi" */;
+			buildPhases = (
+				77EADCF81BC6F2F200C0865D /* Sources */,
+				77EADCF91BC6F2F200C0865D /* Frameworks */,
+				77EADCFA1BC6F2F200C0865D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RosAvtoDengi;
+			productName = RosAvtoDengi;
+			productReference = 77EADCFC1BC6F2F200C0865D /* RosAvtoDengi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77EADD141BC6F2F200C0865D /* RosAvtoDengiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77EADD2C1BC6F2F200C0865D /* Build configuration list for PBXNativeTarget "RosAvtoDengiTests" */;
+			buildPhases = (
+				77EADD111BC6F2F200C0865D /* Sources */,
+				77EADD121BC6F2F200C0865D /* Frameworks */,
+				77EADD131BC6F2F200C0865D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77EADD171BC6F2F200C0865D /* PBXTargetDependency */,
+			);
+			name = RosAvtoDengiTests;
+			productName = RosAvtoDengiTests;
+			productReference = 77EADD151BC6F2F200C0865D /* RosAvtoDengiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77EADD1F1BC6F2F200C0865D /* RosAvtoDengiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77EADD2F1BC6F2F200C0865D /* Build configuration list for PBXNativeTarget "RosAvtoDengiUITests" */;
+			buildPhases = (
+				77EADD1C1BC6F2F200C0865D /* Sources */,
+				77EADD1D1BC6F2F200C0865D /* Frameworks */,
+				77EADD1E1BC6F2F200C0865D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77EADD221BC6F2F200C0865D /* PBXTargetDependency */,
+			);
+			name = RosAvtoDengiUITests;
+			productName = RosAvtoDengiUITests;
+			productReference = 77EADD201BC6F2F200C0865D /* RosAvtoDengiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77EADCF41BC6F2F100C0865D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Viktor;
+				TargetAttributes = {
+					77EADCFB1BC6F2F200C0865D = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8W954C8DEM;
+					};
+					77EADD141BC6F2F200C0865D = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8W954C8DEM;
+						TestTargetID = 77EADCFB1BC6F2F200C0865D;
+					};
+					77EADD1F1BC6F2F200C0865D = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8W954C8DEM;
+						TestTargetID = 77EADCFB1BC6F2F200C0865D;
+					};
+				};
+			};
+			buildConfigurationList = 77EADCF71BC6F2F100C0865D /* Build configuration list for PBXProject "RosAvtoDengi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77EADCF31BC6F2F100C0865D;
+			productRefGroup = 77EADCFD1BC6F2F200C0865D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77EADCFB1BC6F2F200C0865D /* RosAvtoDengi */,
+				77EADD141BC6F2F200C0865D /* RosAvtoDengiTests */,
+				77EADD1F1BC6F2F200C0865D /* RosAvtoDengiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77EADCFA1BC6F2F200C0865D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EADD0F1BC6F2F200C0865D /* LaunchScreen.storyboard in Resources */,
+				77EADD0C1BC6F2F200C0865D /* Assets.xcassets in Resources */,
+				77EADD0A1BC6F2F200C0865D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EADD131BC6F2F200C0865D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EADD1E1BC6F2F200C0865D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77EADCF81BC6F2F200C0865D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EADD071BC6F2F200C0865D /* MainView.m in Sources */,
+				77EADD411BC6FD0D00C0865D /* ContactsView.m in Sources */,
+				77EADD041BC6F2F200C0865D /* AppDelegate.m in Sources */,
+				77EADD3E1BC6FCDB00C0865D /* CalculatorView.m in Sources */,
+				77EADD3B1BC6FCCB00C0865D /* LocationView.m in Sources */,
+				77EADD011BC6F2F200C0865D /* main.m in Sources */,
+				77EADD381BC6FCAF00C0865D /* CompanyNewsView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EADD111BC6F2F200C0865D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EADD1A1BC6F2F200C0865D /* RosAvtoDengiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EADD1C1BC6F2F200C0865D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EADD251BC6F2F200C0865D /* RosAvtoDengiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77EADD171BC6F2F200C0865D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77EADCFB1BC6F2F200C0865D /* RosAvtoDengi */;
+			targetProxy = 77EADD161BC6F2F200C0865D /* PBXContainerItemProxy */;
+		};
+		77EADD221BC6F2F200C0865D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77EADCFB1BC6F2F200C0865D /* RosAvtoDengi */;
+			targetProxy = 77EADD211BC6F2F200C0865D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77EADD081BC6F2F200C0865D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77EADD091BC6F2F200C0865D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77EADD0D1BC6F2F200C0865D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77EADD0E1BC6F2F200C0865D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77EADD271BC6F2F200C0865D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77EADD281BC6F2F200C0865D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77EADD2A1BC6F2F200C0865D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RosAvtoDengi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ugi-Ugi.RosAvtoDengi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77EADD2B1BC6F2F200C0865D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RosAvtoDengi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ugi-Ugi.RosAvtoDengi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		77EADD2D1BC6F2F200C0865D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RosAvtoDengiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ugi-Ugi.RosAvtoDengiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RosAvtoDengi.app/RosAvtoDengi";
+			};
+			name = Debug;
+		};
+		77EADD2E1BC6F2F200C0865D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RosAvtoDengiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ugi-Ugi.RosAvtoDengiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RosAvtoDengi.app/RosAvtoDengi";
+			};
+			name = Release;
+		};
+		77EADD301BC6F2F200C0865D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RosAvtoDengiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ugi-Ugi.RosAvtoDengiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RosAvtoDengi;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		77EADD311BC6F2F200C0865D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RosAvtoDengiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ugi-Ugi.RosAvtoDengiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RosAvtoDengi;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77EADCF71BC6F2F100C0865D /* Build configuration list for PBXProject "RosAvtoDengi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77EADD271BC6F2F200C0865D /* Debug */,
+				77EADD281BC6F2F200C0865D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77EADD291BC6F2F200C0865D /* Build configuration list for PBXNativeTarget "RosAvtoDengi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77EADD2A1BC6F2F200C0865D /* Debug */,
+				77EADD2B1BC6F2F200C0865D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		77EADD2C1BC6F2F200C0865D /* Build configuration list for PBXNativeTarget "RosAvtoDengiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77EADD2D1BC6F2F200C0865D /* Debug */,
+				77EADD2E1BC6F2F200C0865D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		77EADD2F1BC6F2F200C0865D /* Build configuration list for PBXNativeTarget "RosAvtoDengiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77EADD301BC6F2F200C0865D /* Debug */,
+				77EADD311BC6F2F200C0865D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77EADCF41BC6F2F100C0865D /* Project object */;
+}
