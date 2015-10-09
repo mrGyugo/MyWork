@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E9627895557E677C8B9FC69 /* libPods-RosAvtoDengi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9815F3A96F55222364C56B /* libPods-RosAvtoDengi.a */; };
+		77A334951BC71A4F00739D3E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A334941BC71A4F00739D3E /* MapKit.framework */; };
 		77EADD011BC6F2F200C0865D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD001BC6F2F200C0865D /* main.m */; };
 		77EADD041BC6F2F200C0865D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD031BC6F2F200C0865D /* AppDelegate.m */; };
 		77EADD071BC6F2F200C0865D /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD061BC6F2F200C0865D /* MainView.m */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		152AC9111DD0438DF1EDAD81 /* Pods-RosAvtoDengi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RosAvtoDengi.release.xcconfig"; path = "Pods/Target Support Files/Pods-RosAvtoDengi/Pods-RosAvtoDengi.release.xcconfig"; sourceTree = "<group>"; };
+		77A334941BC71A4F00739D3E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		77EADCFC1BC6F2F200C0865D /* RosAvtoDengi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosAvtoDengi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EADD001BC6F2F200C0865D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77EADD021BC6F2F200C0865D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		77EADD3D1BC6FCDB00C0865D /* CalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorView.m; sourceTree = "<group>"; };
 		77EADD3F1BC6FD0D00C0865D /* ContactsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsView.h; sourceTree = "<group>"; };
 		77EADD401BC6FD0D00C0865D /* ContactsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsView.m; sourceTree = "<group>"; };
+		DE9815F3A96F55222364C56B /* libPods-RosAvtoDengi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RosAvtoDengi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E2B176E37881F462F5284E /* Pods-RosAvtoDengi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RosAvtoDengi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RosAvtoDengi/Pods-RosAvtoDengi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77A334951BC71A4F00739D3E /* MapKit.framework in Frameworks */,
+				0E9627895557E677C8B9FC69 /* libPods-RosAvtoDengi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A73336742807C6E58449019 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0E2B176E37881F462F5284E /* Pods-RosAvtoDengi.debug.xcconfig */,
+				152AC9111DD0438DF1EDAD81 /* Pods-RosAvtoDengi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		77EADCF31BC6F2F100C0865D = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +114,8 @@
 				77EADD181BC6F2F200C0865D /* RosAvtoDengiTests */,
 				77EADD231BC6F2F200C0865D /* RosAvtoDengiUITests */,
 				77EADCFD1BC6F2F200C0865D /* Products */,
+				6A73336742807C6E58449019 /* Pods */,
+				CDA60D497AD600A4D269B5EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,6 +211,15 @@
 			name = "Company's news";
 			sourceTree = "<group>";
 		};
+		CDA60D497AD600A4D269B5EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77A334941BC71A4F00739D3E /* MapKit.framework */,
+				DE9815F3A96F55222364C56B /* libPods-RosAvtoDengi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77EADD291BC6F2F200C0865D /* Build configuration list for PBXNativeTarget "RosAvtoDengi" */;
 			buildPhases = (
+				7CF632D2441808FE2618F251 /* Check Pods Manifest.lock */,
 				77EADCF81BC6F2F200C0865D /* Sources */,
 				77EADCF91BC6F2F200C0865D /* Frameworks */,
 				77EADCFA1BC6F2F200C0865D /* Resources */,
+				1F8278B9780CEB8E2F0A6634 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,6 +349,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F8278B9780CEB8E2F0A6634 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RosAvtoDengi/Pods-RosAvtoDengi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CF632D2441808FE2618F251 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77EADCF81BC6F2F200C0865D /* Sources */ = {
@@ -470,6 +533,7 @@
 		};
 		77EADD2A1BC6F2F200C0865D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E2B176E37881F462F5284E /* Pods-RosAvtoDengi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RosAvtoDengi/Info.plist;
@@ -481,6 +545,7 @@
 		};
 		77EADD2B1BC6F2F200C0865D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 152AC9111DD0438DF1EDAD81 /* Pods-RosAvtoDengi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RosAvtoDengi/Info.plist;
@@ -557,6 +622,7 @@
 				77EADD2B1BC6F2F200C0865D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77EADD2C1BC6F2F200C0865D /* Build configuration list for PBXNativeTarget "RosAvtoDengiTests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +631,7 @@
 				77EADD2E1BC6F2F200C0865D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77EADD2F1BC6F2F200C0865D /* Build configuration list for PBXNativeTarget "RosAvtoDengiUITests" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +640,7 @@
 				77EADD311BC6F2F200C0865D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
