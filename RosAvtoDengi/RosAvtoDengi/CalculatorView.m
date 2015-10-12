@@ -7,16 +7,17 @@
 //
 
 #import "CalculatorView.h"
-#import "AKPickerView.h"
+#import "APINews.h"
+#import "Parser.h"
+#import "HeightForText.h"
 
-@interface CalculatorView () <AKPickerViewDataSource, AKPickerViewDelegate>
+@interface CalculatorView () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *barCalculatorView;
 @property (weak, nonatomic) IBOutlet UIButton *buttonBackCalculatorView;
-@property (weak, nonatomic) IBOutlet UIView *strokeView;
+@property (strong, nonatomic) NSMutableArray * reviewsArray;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (nonatomic, strong) AKPickerView *pickerView;
-@property (nonatomic, strong) NSArray *titles;
 
 @end
 
@@ -25,73 +26,62 @@
 - (void) viewDidLoad {
     [super viewDidLoad];
     
-    //Свойтсва выделителя числа--------------------------
-    self.strokeView.backgroundColor = [UIColor clearColor];
-    self.strokeView.layer.borderColor = [UIColor blackColor].CGColor;
-    self.strokeView.layer.borderWidth = 2.f;
-    self.strokeView.layer.cornerRadius = 5.f;
+    self.reviewsArray = [[NSMutableArray alloc] init];
     
-    //Свойства пикера------------------------------------
-    self.pickerView = [[AKPickerView alloc] initWithFrame:CGRectMake(-90, 235, 500, 100)];
-    self.pickerView.delegate = self;
-    self.pickerView.dataSource = self;
-    self.pickerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [self.view addSubview:self.pickerView];
+    [self getDataFromRoaAvto];
     
-    self.pickerView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20];
-    self.pickerView.highlightedFont = [UIFont fontWithName:@"HelveticaNeue" size:20];
-    self.pickerView.interitemSpacing = 40.0;
-    self.pickerView.fisheyeFactor = 0.001;
-    self.pickerView.pickerViewStyle = AKPickerViewStyle3D;
-    self.pickerView.maskDisabled = false;
+
     
-    self.titles = @[@"1000", @"2000", @"3000", @"4000", @"5000",
-                    @"6000", @"7000", @"8000", @"9000", @"10000",
-                    @"11000", @"12000", @"13000", @"14000", @"15000",
-                    @"16000", @"17000", @"18000", @"19000", @"20000",];
-    
-    [self.pickerView reloadData];
     
         [self.buttonBackCalculatorView addTarget:self action:@selector(backButtonCalculator) forControlEvents:UIControlEventTouchUpInside];
     
+
+
+
+    
 }
 
-#pragma mark - AKPickerViewDataSource
-
-- (NSUInteger)numberOfItemsInPickerView:(AKPickerView *)pickerView
+//Парсинг данных---------------------------------------
+- (void) parsing: (id)response
 {
-    return [self.titles count];
+    if ([response isKindOfClass:[NSArray class]]) {
+        
+        NSArray * array = (NSArray*) response;
+        
+        [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSDictionary * dict = (NSDictionary *) obj;
+            
+            Parser * parser = [[Parser alloc] init];
+            [parser mts_setValuesForKeysWithDictionary:dict];
+            
+            //Параметры ширины текста одзыва----------------------------------------------
+            NSString * text = parser.recall_text;
+            text = [text stringByReplacingOccurrencesOfString:@"<br>" withString:@"\n"];
+            
+            NSString * name = parser.recall_name;
+
+            
+            HeightForText* heightForText = [HeightForText new];
+            
+            CGFloat textHeight = [heightForText getHeightForText:text textWith:self.view.frame.size.width - 20 withFont:[UIFont fontWithName:@"Century Gothic-Bold" size:15]];
+            
+            CGFloat nameHeight = [heightForText getHeightForText:name textWith:self.view.frame.size.width - 10  withFont:[UIFont fontWithName:@"Century Gothic-Bold" size:20]];
+            
+            parser.targetHeight = textHeight + nameHeight;
+            parser.recall_text = text;
+            parser.recall_name = name;
+            
+            [self.reviewsArray addObject:parser];
+            
+            self.tableView.backgroundColor = [UIColor clearColor];
+            
+            
+        }];
+        
+        [self.tableView reloadData];
+        
+    }
 }
-
-- (NSString *)pickerView:(AKPickerView *)pickerView titleForItem:(NSInteger)item
-{
-    return self.titles[item];
-}
-
-
-#pragma mark - AKPickerViewDelegate
-
-- (void)pickerView:(AKPickerView *)pickerView didSelectItem:(NSInteger)item
-{
-    NSLog(@"%@", self.titles[item]);
-}
-
-
-#pragma mark - UIScrollViewDelegate
-
-/*
- * AKPickerViewDelegate inherits UIScrollViewDelegate.
- * You can use UIScrollViewDelegate methods
- * by simply setting pickerView's delegate.
- *
- */
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    // Too noisy...
-    // NSLog(@"%f", scrollView.contentOffset.x);
-}
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -101,6 +91,92 @@
 - (void) backButtonCalculator {
     
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return self.reviewsArray.count;
+    
+}
+    
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString * identifier = @"Cell";
+    
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    
+    cell.backgroundColor = [UIColor clearColor];
+    
+    for (UIView* view in cell.subviews) {
+        [view removeFromSuperview];
+    }
+    
+    Parser* parser = [self.reviewsArray objectAtIndex:indexPath.row];
+    
+    [cell addSubview:[self getNameView:parser.recall_name height:17.f]];
+    
+    [cell addSubview:[self getTextView:parser.recall_text height:parser.targetHeight]];
+    
+    
+    
+    return cell;
+    
+}
+
+//Текст отзыва--------------------------------------
+- (UITextView*) getTextView: (NSString*) text height: (CGFloat) height
+{
+    UITextView* textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 20, self.view.frame.size.width - 20, height)];
+    textView.editable = NO;
+    textView.scrollEnabled = NO;
+    textView.font = [UIFont fontWithName:@"Century Gothic-Bold" size:15];
+    textView.text = text;
+    textView.backgroundColor = [UIColor clearColor];
+    
+    return textView;
+}
+
+- (UILabel*) getNameView: (NSString*) name height: (CGFloat) height {
+    
+    UILabel * labelName = [[UILabel alloc] initWithFrame:CGRectMake(10, 5, self.view.frame.size.width - 20, height)];
+    
+    labelName.font = [UIFont fontWithName:@"Century Gothic-Bold" size:20];;
+    labelName.text = name;
+    
+    return labelName;
+}
+//Ширина ячейки-------------------------------------
+- (CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
+{
+    
+    Parser* parser = [self.reviewsArray objectAtIndex:indexPath.row];
+    
+    return parser.targetHeight + 30;
+}
+
+- (void) getDataFromRoaAvto
+{
+    NSDictionary * params = [[NSDictionary alloc] initWithObjectsAndKeys:
+                             [NSNumber numberWithInteger:5],@"count",
+                             [NSNumber numberWithInteger: 0],@"offset",
+                             nil];
+    
+    APINews * api = [APINews new];
+    
+    [api getDataFromServerWithMethod:params method:@"action=load_recall" complitionBlock:^(id response) {
+        
+        [self parsing:response];
+        
+        
+        
+    }];
+    
 }
 
 

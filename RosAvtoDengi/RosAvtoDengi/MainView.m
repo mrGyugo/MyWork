@@ -7,10 +7,10 @@
 //
 
 #import "MainView.h"
-#import "CompanyNewsView.h"
 #import "LocationView.h"
 #import "CalculatorView.h"
 #import "ContactsView.h"
+#import "UIColor+HexColor.h"
 
 @interface MainView ()
 @property (weak, nonatomic) IBOutlet UIView* viewBarMainView; //Бар mainView
@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton* buttonOurContacts; //Наши контакты
 @property (weak, nonatomic) IBOutlet UIButton* buttonCalculator; //Калькулятор
 @property (weak, nonatomic) IBOutlet UIButton* buttonLocation; //Месположение филиалов
-@property (weak, nonatomic) IBOutlet UIButton* buttonNews; //Наши новости
+@property (weak, nonatomic) IBOutlet UIView *downView; //Нижнее view
 
 @end
 
@@ -29,6 +29,11 @@
     [super viewDidLoad];
 
     //Параметры viewBarMainView----------------------------------------------
+    self.viewBarMainView.backgroundColor = [UIColor colorWithHexString:@"434242"];
+    
+    //Параметры downView-----------------------------------------------------
+    self.downView.backgroundColor = [UIColor colorWithHexString:@"434242"];
+    
 
     //Параметры buttonOurContacts--------------------------------------------
     [self drawButtons:self.buttonOurContacts];
@@ -47,12 +52,6 @@
     [self.buttonCalculator addTarget:self
                               action:@selector(actionButtonCalculator)
                     forControlEvents:UIControlEventTouchUpInside];
-
-    //Параметры buttonNews---------------------------------------------------
-    [self drawButtons:self.buttonNews];
-    [self.buttonNews addTarget:self
-                        action:@selector(actionButtonNews)
-              forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning
@@ -90,13 +89,6 @@
 {
 
     CalculatorView* detail = [self.storyboard instantiateViewControllerWithIdentifier:@"Calculator"];
-    [self.navigationController pushViewController:detail animated:YES];
-}
-//Действие кнопки ButtonNews-------------------------------------------------
-- (void)actionButtonNews
-{
-
-    CompanyNewsView* detail = [self.storyboard instantiateViewControllerWithIdentifier:@"CompanyNews"];
     [self.navigationController pushViewController:detail animated:YES];
 }
 

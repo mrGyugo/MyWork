@@ -8,7 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0E9627895557E677C8B9FC69 /* libPods-RosAvtoDengi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9815F3A96F55222364C56B /* libPods-RosAvtoDengi.a */; };
+		779B35B81BC9937A009F6B2F /* APINews.m in Sources */ = {isa = PBXBuildFile; fileRef = 779B35B71BC9937A009F6B2F /* APINews.m */; settings = {ASSET_TAGS = (); }; };
+		779C5A801BCA899600F4F31D /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C5A751BCA899600F4F31D /* UIImage+Alpha.m */; settings = {ASSET_TAGS = (); }; };
+		779C5A811BCA899600F4F31D /* UIImage+Blured_And_SnapShot_Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C5A771BCA899600F4F31D /* UIImage+Blured_And_SnapShot_Image.m */; settings = {ASSET_TAGS = (); }; };
+		779C5A821BCA899600F4F31D /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C5A791BCA899600F4F31D /* UIImage+ImageEffects.m */; settings = {ASSET_TAGS = (); }; };
+		779C5A831BCA899600F4F31D /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C5A7B1BCA899600F4F31D /* UIImage+Resize.m */; settings = {ASSET_TAGS = (); }; };
+		779C5A841BCA899600F4F31D /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C5A7D1BCA899600F4F31D /* UIImage+RoundedCorner.m */; settings = {ASSET_TAGS = (); }; };
+		779C5A851BCA899600F4F31D /* HeightForText.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C5A7F1BCA899600F4F31D /* HeightForText.m */; settings = {ASSET_TAGS = (); }; };
+		779C5A8B1BCA979500F4F31D /* номер 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 779C5A8A1BCA979500F4F31D /* номер 2.png */; settings = {ASSET_TAGS = (); }; };
+		779C5A8E1BCAE85500F4F31D /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C5A8D1BCAE85500F4F31D /* UIColor+HexColor.m */; settings = {ASSET_TAGS = (); }; };
+		779C5A921BCAEA7A00F4F31D /* номер 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 779C5A911BCAEA7A00F4F31D /* номер 1.png */; settings = {ASSET_TAGS = (); }; };
+		779C5A941BCAEF5A00F4F31D /* logo_gl.png in Resources */ = {isa = PBXBuildFile; fileRef = 779C5A931BCAEF5A00F4F31D /* logo_gl.png */; settings = {ASSET_TAGS = (); }; };
+		779C5A961BCAF71600F4F31D /* buttonRosAvtoDengi.png in Resources */ = {isa = PBXBuildFile; fileRef = 779C5A951BCAF71600F4F31D /* buttonRosAvtoDengi.png */; settings = {ASSET_TAGS = (); }; };
 		77A334951BC71A4F00739D3E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A334941BC71A4F00739D3E /* MapKit.framework */; };
+		77C0BF521BC9C546004616BB /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C0BF511BC9C546004616BB /* Parser.m */; settings = {ASSET_TAGS = (); }; };
 		77EADD011BC6F2F200C0865D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD001BC6F2F200C0865D /* main.m */; };
 		77EADD041BC6F2F200C0865D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD031BC6F2F200C0865D /* AppDelegate.m */; };
 		77EADD071BC6F2F200C0865D /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD061BC6F2F200C0865D /* MainView.m */; };
@@ -17,10 +30,13 @@
 		77EADD0F1BC6F2F200C0865D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EADD0D1BC6F2F200C0865D /* LaunchScreen.storyboard */; };
 		77EADD1A1BC6F2F200C0865D /* RosAvtoDengiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD191BC6F2F200C0865D /* RosAvtoDengiTests.m */; };
 		77EADD251BC6F2F200C0865D /* RosAvtoDengiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD241BC6F2F200C0865D /* RosAvtoDengiUITests.m */; };
-		77EADD381BC6FCAF00C0865D /* CompanyNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD371BC6FCAF00C0865D /* CompanyNewsView.m */; settings = {ASSET_TAGS = (); }; };
 		77EADD3B1BC6FCCB00C0865D /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD3A1BC6FCCB00C0865D /* LocationView.m */; settings = {ASSET_TAGS = (); }; };
 		77EADD3E1BC6FCDB00C0865D /* CalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD3D1BC6FCDB00C0865D /* CalculatorView.m */; settings = {ASSET_TAGS = (); }; };
 		77EADD411BC6FD0D00C0865D /* ContactsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EADD401BC6FD0D00C0865D /* ContactsView.m */; settings = {ASSET_TAGS = (); }; };
+		77EB88681BC9478A000D4A4C /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EB88671BC9478A000D4A4C /* CustomAnnotation.m */; settings = {ASSET_TAGS = (); }; };
+		77EB886C1BC94DF8000D4A4C /* google-map-pointer-yellow-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 77EB886B1BC94DF8000D4A4C /* google-map-pointer-yellow-hi.png */; settings = {ASSET_TAGS = (); }; };
+		77EB886F1BC94E58000D4A4C /* CustomMapPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EB886E1BC94E58000D4A4C /* CustomMapPinView.m */; settings = {ASSET_TAGS = (); }; };
+		77EB88781BC983B6000D4A4C /* Animathion.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EB88771BC983B6000D4A4C /* Animathion.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +58,29 @@
 
 /* Begin PBXFileReference section */
 		152AC9111DD0438DF1EDAD81 /* Pods-RosAvtoDengi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RosAvtoDengi.release.xcconfig"; path = "Pods/Target Support Files/Pods-RosAvtoDengi/Pods-RosAvtoDengi.release.xcconfig"; sourceTree = "<group>"; };
+		779B35B61BC9937A009F6B2F /* APINews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APINews.h; sourceTree = "<group>"; };
+		779B35B71BC9937A009F6B2F /* APINews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APINews.m; sourceTree = "<group>"; };
+		779C5A741BCA899600F4F31D /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		779C5A751BCA899600F4F31D /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		779C5A761BCA899600F4F31D /* UIImage+Blured_And_SnapShot_Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blured_And_SnapShot_Image.h"; sourceTree = "<group>"; };
+		779C5A771BCA899600F4F31D /* UIImage+Blured_And_SnapShot_Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blured_And_SnapShot_Image.m"; sourceTree = "<group>"; };
+		779C5A781BCA899600F4F31D /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		779C5A791BCA899600F4F31D /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		779C5A7A1BCA899600F4F31D /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		779C5A7B1BCA899600F4F31D /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		779C5A7C1BCA899600F4F31D /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		779C5A7D1BCA899600F4F31D /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		779C5A7E1BCA899600F4F31D /* HeightForText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeightForText.h; sourceTree = "<group>"; };
+		779C5A7F1BCA899600F4F31D /* HeightForText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeightForText.m; sourceTree = "<group>"; };
+		779C5A8A1BCA979500F4F31D /* номер 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "номер 2.png"; sourceTree = "<group>"; };
+		779C5A8C1BCAE85500F4F31D /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
+		779C5A8D1BCAE85500F4F31D /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
+		779C5A911BCAEA7A00F4F31D /* номер 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "номер 1.png"; sourceTree = "<group>"; };
+		779C5A931BCAEF5A00F4F31D /* logo_gl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_gl.png; sourceTree = "<group>"; };
+		779C5A951BCAF71600F4F31D /* buttonRosAvtoDengi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonRosAvtoDengi.png; sourceTree = "<group>"; };
 		77A334941BC71A4F00739D3E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		77C0BF501BC9C546004616BB /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		77C0BF511BC9C546004616BB /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
 		77EADCFC1BC6F2F200C0865D /* RosAvtoDengi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosAvtoDengi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EADD001BC6F2F200C0865D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77EADD021BC6F2F200C0865D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,14 +97,19 @@
 		77EADD201BC6F2F200C0865D /* RosAvtoDengiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RosAvtoDengiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EADD241BC6F2F200C0865D /* RosAvtoDengiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosAvtoDengiUITests.m; sourceTree = "<group>"; };
 		77EADD261BC6F2F200C0865D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77EADD361BC6FCAF00C0865D /* CompanyNewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyNewsView.h; sourceTree = "<group>"; };
-		77EADD371BC6FCAF00C0865D /* CompanyNewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyNewsView.m; sourceTree = "<group>"; };
 		77EADD391BC6FCCB00C0865D /* LocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationView.h; sourceTree = "<group>"; };
 		77EADD3A1BC6FCCB00C0865D /* LocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationView.m; sourceTree = "<group>"; };
 		77EADD3C1BC6FCDB00C0865D /* CalculatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorView.h; sourceTree = "<group>"; };
 		77EADD3D1BC6FCDB00C0865D /* CalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorView.m; sourceTree = "<group>"; };
 		77EADD3F1BC6FD0D00C0865D /* ContactsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsView.h; sourceTree = "<group>"; };
 		77EADD401BC6FD0D00C0865D /* ContactsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsView.m; sourceTree = "<group>"; };
+		77EB88661BC9478A000D4A4C /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		77EB88671BC9478A000D4A4C /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
+		77EB886B1BC94DF8000D4A4C /* google-map-pointer-yellow-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google-map-pointer-yellow-hi.png"; sourceTree = "<group>"; };
+		77EB886D1BC94E58000D4A4C /* CustomMapPinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMapPinView.h; sourceTree = "<group>"; };
+		77EB886E1BC94E58000D4A4C /* CustomMapPinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMapPinView.m; sourceTree = "<group>"; };
+		77EB88761BC983B6000D4A4C /* Animathion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animathion.h; sourceTree = "<group>"; };
+		77EB88771BC983B6000D4A4C /* Animathion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animathion.m; sourceTree = "<group>"; };
 		DE9815F3A96F55222364C56B /* libPods-RosAvtoDengi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RosAvtoDengi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E2B176E37881F462F5284E /* Pods-RosAvtoDengi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RosAvtoDengi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RosAvtoDengi/Pods-RosAvtoDengi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +150,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		779C5A701BCA862800F4F31D /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				779C5A741BCA899600F4F31D /* UIImage+Alpha.h */,
+				779C5A751BCA899600F4F31D /* UIImage+Alpha.m */,
+				779C5A761BCA899600F4F31D /* UIImage+Blured_And_SnapShot_Image.h */,
+				779C5A771BCA899600F4F31D /* UIImage+Blured_And_SnapShot_Image.m */,
+				779C5A781BCA899600F4F31D /* UIImage+ImageEffects.h */,
+				779C5A791BCA899600F4F31D /* UIImage+ImageEffects.m */,
+				779C5A7A1BCA899600F4F31D /* UIImage+Resize.h */,
+				779C5A7B1BCA899600F4F31D /* UIImage+Resize.m */,
+				779C5A7C1BCA899600F4F31D /* UIImage+RoundedCorner.h */,
+				779C5A7D1BCA899600F4F31D /* UIImage+RoundedCorner.m */,
+				779C5A7E1BCA899600F4F31D /* HeightForText.h */,
+				779C5A7F1BCA899600F4F31D /* HeightForText.m */,
+				779C5A8C1BCAE85500F4F31D /* UIColor+HexColor.h */,
+				779C5A8D1BCAE85500F4F31D /* UIColor+HexColor.m */,
+			);
+			name = Structure;
+			sourceTree = "<group>";
+		};
 		77EADCF31BC6F2F100C0865D = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +196,7 @@
 		77EADCFE1BC6F2F200C0865D /* RosAvtoDengi */ = {
 			isa = PBXGroup;
 			children = (
-				77EADD351BC6FC7300C0865D /* Company's news */,
+				779C5A701BCA862800F4F31D /* Structure */,
 				77EADD341BC6FC4C00C0865D /* LocationOfBranches */,
 				77EADD331BC6FC1C00C0865D /* Calculator percent */,
 				77EADD321BC6FBD000C0865D /* OurContacts */,
@@ -140,11 +204,19 @@
 				77EADD031BC6F2F200C0865D /* AppDelegate.m */,
 				77EADD051BC6F2F200C0865D /* MainView.h */,
 				77EADD061BC6F2F200C0865D /* MainView.m */,
+				779B35B61BC9937A009F6B2F /* APINews.h */,
+				779B35B71BC9937A009F6B2F /* APINews.m */,
 				77EADD081BC6F2F200C0865D /* Main.storyboard */,
+				779C5A931BCAEF5A00F4F31D /* logo_gl.png */,
+				779C5A951BCAF71600F4F31D /* buttonRosAvtoDengi.png */,
+				779C5A8A1BCA979500F4F31D /* номер 2.png */,
+				779C5A911BCAEA7A00F4F31D /* номер 1.png */,
 				77EADD0B1BC6F2F200C0865D /* Assets.xcassets */,
 				77EADD0D1BC6F2F200C0865D /* LaunchScreen.storyboard */,
 				77EADD101BC6F2F200C0865D /* Info.plist */,
 				77EADCFF1BC6F2F200C0865D /* Supporting Files */,
+				77EB88761BC983B6000D4A4C /* Animathion.h */,
+				77EB88771BC983B6000D4A4C /* Animathion.m */,
 			);
 			path = RosAvtoDengi;
 			sourceTree = "<group>";
@@ -189,6 +261,8 @@
 			children = (
 				77EADD3C1BC6FCDB00C0865D /* CalculatorView.h */,
 				77EADD3D1BC6FCDB00C0865D /* CalculatorView.m */,
+				77C0BF501BC9C546004616BB /* Parser.h */,
+				77C0BF511BC9C546004616BB /* Parser.m */,
 			);
 			name = "Calculator percent";
 			sourceTree = "<group>";
@@ -198,17 +272,13 @@
 			children = (
 				77EADD391BC6FCCB00C0865D /* LocationView.h */,
 				77EADD3A1BC6FCCB00C0865D /* LocationView.m */,
+				77EB88661BC9478A000D4A4C /* CustomAnnotation.h */,
+				77EB88671BC9478A000D4A4C /* CustomAnnotation.m */,
+				77EB886B1BC94DF8000D4A4C /* google-map-pointer-yellow-hi.png */,
+				77EB886D1BC94E58000D4A4C /* CustomMapPinView.h */,
+				77EB886E1BC94E58000D4A4C /* CustomMapPinView.m */,
 			);
 			name = LocationOfBranches;
-			sourceTree = "<group>";
-		};
-		77EADD351BC6FC7300C0865D /* Company's news */ = {
-			isa = PBXGroup;
-			children = (
-				77EADD361BC6FCAF00C0865D /* CompanyNewsView.h */,
-				77EADD371BC6FCAF00C0865D /* CompanyNewsView.m */,
-			);
-			name = "Company's news";
 			sourceTree = "<group>";
 		};
 		CDA60D497AD600A4D269B5EA /* Frameworks */ = {
@@ -232,6 +302,7 @@
 				77EADCF91BC6F2F200C0865D /* Frameworks */,
 				77EADCFA1BC6F2F200C0865D /* Resources */,
 				1F8278B9780CEB8E2F0A6634 /* Copy Pods Resources */,
+				BFD44C7D78D3FD6AB2C85B68 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,9 +399,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779C5A8B1BCA979500F4F31D /* номер 2.png in Resources */,
+				77EB886C1BC94DF8000D4A4C /* google-map-pointer-yellow-hi.png in Resources */,
+				779C5A961BCAF71600F4F31D /* buttonRosAvtoDengi.png in Resources */,
 				77EADD0F1BC6F2F200C0865D /* LaunchScreen.storyboard in Resources */,
+				779C5A921BCAEA7A00F4F31D /* номер 1.png in Resources */,
 				77EADD0C1BC6F2F200C0865D /* Assets.xcassets in Resources */,
 				77EADD0A1BC6F2F200C0865D /* Main.storyboard in Resources */,
+				779C5A941BCAEF5A00F4F31D /* logo_gl.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +457,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		BFD44C7D78D3FD6AB2C85B68 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RosAvtoDengi/Pods-RosAvtoDengi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -390,11 +481,22 @@
 			files = (
 				77EADD071BC6F2F200C0865D /* MainView.m in Sources */,
 				77EADD411BC6FD0D00C0865D /* ContactsView.m in Sources */,
+				779C5A821BCA899600F4F31D /* UIImage+ImageEffects.m in Sources */,
 				77EADD041BC6F2F200C0865D /* AppDelegate.m in Sources */,
+				77EB886F1BC94E58000D4A4C /* CustomMapPinView.m in Sources */,
+				779C5A8E1BCAE85500F4F31D /* UIColor+HexColor.m in Sources */,
+				77C0BF521BC9C546004616BB /* Parser.m in Sources */,
+				77EB88681BC9478A000D4A4C /* CustomAnnotation.m in Sources */,
+				77EB88781BC983B6000D4A4C /* Animathion.m in Sources */,
+				779C5A841BCA899600F4F31D /* UIImage+RoundedCorner.m in Sources */,
+				779C5A851BCA899600F4F31D /* HeightForText.m in Sources */,
 				77EADD3E1BC6FCDB00C0865D /* CalculatorView.m in Sources */,
+				779C5A801BCA899600F4F31D /* UIImage+Alpha.m in Sources */,
+				779B35B81BC9937A009F6B2F /* APINews.m in Sources */,
+				779C5A811BCA899600F4F31D /* UIImage+Blured_And_SnapShot_Image.m in Sources */,
 				77EADD3B1BC6FCCB00C0865D /* LocationView.m in Sources */,
 				77EADD011BC6F2F200C0865D /* main.m in Sources */,
-				77EADD381BC6FCAF00C0865D /* CompanyNewsView.m in Sources */,
+				779C5A831BCA899600F4F31D /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
